@@ -1,8 +1,25 @@
 # 🛒 ShopPilot AI
 
-> An AI-powered e-commerce management platform built as a monorepo — Laravel 10 REST API backend + Next.js 14 App Router frontend.
+> An AI-powered multi-tenant e-commerce management platform built as a monorepo — Laravel 10 REST API backend + Next.js 14 App Router frontend.
+
+---
+
+## 📸 Interface Previews
+
+### 1. 📊 Executive Dashboard & AI Analytics
+> Comprehensive metrics overview, active stores status, and real-time token/cost accounting for all AI features.
 
 ![ShopPilot AI Dashboard Preview](assets/dashboard-preview.jpg)
+
+### 2. 🏪 Store Management & Product Catalog Hub
+> Multi-store operations, catalog inventory tables with stock tracking alerts, and built-in AI copywriting tools.
+
+![ShopPilot AI Store Management Preview](assets/store-preview.jpg)
+
+### 3. 🛍️ Customer-Facing E-Commerce Storefront
+> Consumer shopping experience featuring conversational AI search, personalized recommendations, and a proactive shopping assistant.
+
+![ShopPilot AI Customer Storefront Preview](assets/storefront-preview.jpg)
 
 ---
 
@@ -11,7 +28,9 @@
 ```
 ShopPilot-AI/
 ├── assets/                 # Project assets and screenshots
-│   └── dashboard-preview.jpg
+│   ├── dashboard-preview.jpg
+│   ├── store-preview.jpg
+│   └── storefront-preview.jpg
 ├── api/                    # Laravel 10 REST API backend
 │   ├── app/
 │   │   ├── Http/
