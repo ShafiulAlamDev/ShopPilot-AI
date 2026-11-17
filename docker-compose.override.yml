@@ -1,0 +1,27 @@
+# =============================================================================
+# ShopPilot AI — Docker Compose Override (Development)
+# =============================================================================
+# This file extends docker-compose.yml for local dev.
+# It is merged automatically when you run: docker compose up
+#
+# Enables:
+#   - Xdebug on port 9003
+#   - Hot-reload bind mounts
+#   - Debug-friendly PHP config
+# =============================================================================
+
+services:
+
+  php:
+    environment:
+      - XDEBUG_MODE=develop,coverage,debug
+      - XDEBUG_CONFIG=client_host=host.docker.internal client_port=9003
+      - PHP_IDE_CONFIG=serverName=shoppilot
+
+  frontend:
+    environment:
+      - WATCHPACK_POLLING=true   # Enable polling for Windows/WSL file watching
+
+  mysql:
+    ports:
+      - "3306:3306"   # Expose MySQL directly for TablePlus / DBeaver
