@@ -1,0 +1,4 @@
+*.laravel linguist-detectable=true
+*.react linguist-detectable=true
+*.nextjs linguist-detectable=true
+*.xml linguist-detectable=false
