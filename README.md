@@ -2,12 +2,16 @@
 
 > An AI-powered e-commerce management platform built as a monorepo — Laravel 10 REST API backend + Next.js 14 App Router frontend.
 
+![ShopPilot AI Dashboard Preview](assets/dashboard-preview.jpg)
+
 ---
 
 ## 📁 Monorepo Structure
 
 ```
 ShopPilot-AI/
+├── assets/                 # Project assets and screenshots
+│   └── dashboard-preview.jpg
 ├── api/                    # Laravel 10 REST API backend
 │   ├── app/
 │   │   ├── Http/
